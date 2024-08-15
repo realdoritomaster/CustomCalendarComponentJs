@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Calendar Component</title>
+    <script src="customcalendarcomponent.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="header">
+        <h3>Custom Calendar Component</h3>
+        <h2>.js</h2>
+    </header>
+    <div class="container">
+        <div class="calendar-container">
+            <h3>Classic Calendar</h3>
+            <div class="calendar">
+                <div class="upper-control-bar">
+                    <span class="month-text" id="monthText">----</span>
+                    <div class="last-next-button-container">
+                        <button id="resetButton">Today</button>
+                        <button id="lastMonthButton">&lt;</button>
+                        <button id="nextMonthButton">&gt;</button>
+                    </div>
+    
+                </div>
+                <table class="calendar-table">
+                    <thead class="calendar-header-container">
+                        <tr>
+                            <th>Sunday</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                        </tr>
+                    </thead>
+                    <tbody class="calendar-body-container" id="calendarBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
