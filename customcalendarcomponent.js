@@ -57,6 +57,7 @@ function usePopup(start_value) {
     return [this.value, this.setValue, this.createPopup, this.destroyPopup, this.popupExists];
 }
 
+
 document.addEventListener('DOMContentLoaded', function() {
 
     const currentDate = new Date();
@@ -76,7 +77,9 @@ document.addEventListener('DOMContentLoaded', function() {
     let getFirstDayOfMonth = ()=> new Date(getSelectedYear(), getSelectedMonthNum()).getDay();
     let getLastDayOfMonth = ()=> new Date(getSelectedYear(), getSelectedMonthNum()+1, 0).getDay();
 
-    var [currentPopupValue, setPopupValue, createPopup, destroyPopup, popupExists] = usePopup("test");
+    var [currentPopupValue, setPopupValue, createPopup, destroyPopup, popupExists] = usePopup("");
+    
+    //const popupManager = new PopupManager('Initial value');
 
     let events = [];
 
